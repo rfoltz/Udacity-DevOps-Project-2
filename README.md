@@ -31,7 +31,8 @@ source ~/.{project-name}/bin/activate
 4. You will then we put into a terminal that is activated to your project like this image.
 ![Python Terminal Activation Screenshot](./images/python_activate.png "Python Terminal Activation Screenshot")
 
-5. Now that the virtual environment is setup and active you can do a `make all` this will install the required modules from the requirements.txt file as well upgrade the pip installer. It will next run the linting step to lint our code and look for any formating and syntax errors as python is an interpreted language. After the linting it will run the testing scripts to test our code.
+5. Now that the virtual environment is setup and active you can do a `make all` this will install the required modules from the requirements.txt file as well upgrade the pip installer. It will next run the linting step to lint our code and look for any formating and syntax errors as python is an interpreted language. After the linting it will run the testing scripts to test our code. At the end of the command you should be greated by the linting steps and the tests being passed.
+![Screenshot of the pytest results](./images/test_results.png "Screenshot of the pytest results")
 
 
 6. Now that all the code is installed and we've run our linting and testing steps now we can test the code locally ourselves. To run the code you can do `python3 app.py` this run our app in the Azure Cloud shell like in the image below
@@ -133,9 +134,12 @@ Now depending on how you setup Azure Pipelines in your Github account you reposi
 
 For further reading you might want to take a look at the offical documentation to help. [Note the official documentation should be referred to and double checked as you setup CI/CD](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/python-webapp?view=azure-devops).
 
-* Passing tests that are displayed after running the `make all` command from the `Makefile`
 
-* Output of a test run
+## Tests
+If you would like to run the tests during your development you can run the tests using the `pytest` command this will run all files that have the `test_` file naming convention.
+
+When runing `pytest` you should see someting like this.
+![Screenshot of the pytest results](./images/test_results.png "Screenshot of the pytest results")
 
 ## Enhancements
 Here lies a short list of possible future improvements to this project
