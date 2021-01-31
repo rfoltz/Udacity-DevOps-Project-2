@@ -1,5 +1,3 @@
-import os
-import tempfile
 import pytest
 from flask import request, jsonify
 from app import app
