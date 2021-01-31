@@ -6,7 +6,8 @@ install:
 		pip install -r requirements.txt
 
 test:
-	pytest -vv test_app.py
+	pytest --disable-warnings test_app.py
+
 
 
 lint:
