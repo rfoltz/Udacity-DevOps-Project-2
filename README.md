@@ -152,7 +152,7 @@ Here lies a short list of possible future improvements to this project
     - Postal Code or Address to help predict closer housing prices in an area
 
 ## Demo 
-
-<TODO: Add link Screencast on YouTube>
+Here's a link to the demo on Youtube
+https://youtu.be/bSroTgsherY
 
 
