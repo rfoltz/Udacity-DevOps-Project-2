@@ -3,17 +3,18 @@
 This Project is the Project #2 of the Udacity Azure Dev Ops Nanodegree to product a CI and CD process to deploy a web app through Azure App Services. This project comes with a preconfigred Python Flask app to predict housing prices based on the provided dataset.
 
 # Project Plan
-<TODO: Project Plan
+The project plan is very simple for this project and includes links to the Trello board so stalkholders and engineers can see the latest progess.
 
-* A link to a Trello board for the project
-* A link to a spreadsheet that includes the original and final project plan>
+Link to Trello: [Trello Board](https://trello.com/b/8y0IeL22/udacity-project-2-flask-ml-app)
+
+Here's a link to the Google Sheets Project plan.
+[Google Sheets Project Plan](https://docs.google.com/spreadsheets/d/1Z_rSrHQZ0-z9kzYclgjnwL1CecLYfZZKeuzujpYVROY/edit?usp=sharing)
+
 
 # Instructions
 
 Architecture Diagram
 ![Architecture Diagram](./images/Arch_Diagram.png "Architecture Diagram")
-
-<TODO:  Instructions for running the Python project.  How could a user with no context run this project without asking you for any help.  Include screenshots with explicit steps to create that work. Be sure to at least include the following screenshots:
 
 ## Azure Cloud Shell Setup
 Here's how to get the project running in the Azure Cloud shell. If you're running a linux based System such as Ubuntu or Mac OS then it should be very similar
