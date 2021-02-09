@@ -1,5 +1,7 @@
 # Overview
 
+![CI](https://github.com/rfoltz/Udacity-DevOps-Project-2/workflows/CI/badge.svg)
+
 This Project is the Project #2 of the Udacity Azure Dev Ops Nanodegree to product a CI and CD process to deploy a web app through Azure App Services. This project comes with a preconfigred Python Flask app to predict housing prices based on the provided dataset.
 
 # Project Plan
@@ -82,6 +84,9 @@ Port: 443
 2021-01-30T22:02:44.465779072Z 172.16.0.1 - - [30/Jan/2021:22:02:44 +0000] "POST /predict HTTP/1.1" 200 35 "-" "curl/7.64.0"
 ```
 
+Here is an example of what the predicition looks like in the Azure cloud shell after setting up the application in Azure.
+ ![Screenshot of the azure cloud shell showing the cloned project and the predicition response](./images/azure_shell_prediction.png "Screenshot of the azure cloud shell showing the cloned project and the predicition response")
+
  ## Github Actions Step up
  Github actions should already be setup for this repo but let me show you how to set it up in your repositories for future use. Basically the Github actions will build the environment, lint our code and then test our code when anything is pushed to the master branch.
 
@@ -96,6 +101,9 @@ Port: 443
  You have a choice of tons of already configured github actions to do continious integration tasks or deplying your web app. For now though I'm going to click on the "set up a workflow yourself" link at the top of the page.
 
  5. You should be now greated by the YAML file editor where you can add sets to the build or new jobs as well. If you have a look at the .github/workflows/main.yml file in this repo you will see that we've setup a simple build step to setup the environment and install dependencies, then to lint our code and install test our code. And current this action runs when any code is pushed to the master branch as well as when there are any pull requests on the master branch as well.
+
+ Here's an example of what a sucessfull Github Action build looks like:\
+  ![Screenshot of github actions successful build](./images/github_actions_run.png "Screenshot of github actions successful build")
 
 
 ## Azure Pipelines Setup
