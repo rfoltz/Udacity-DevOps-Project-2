@@ -4,7 +4,7 @@ from locust import HttpUser, task, between
 class QuickstartUser(HttpUser):
 
     @task
-    def on_start(self):
+    def predict(self):
         self.client.post("/predict", json={
    "CHAS":{
       "0":0
