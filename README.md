@@ -150,6 +150,10 @@ If you would like to run the tests during your development you can run the tests
 When runing `pytest` you should see someting like this.
 ![Screenshot of the pytest results](./images/test_results.png "Screenshot of the pytest results")
 
+## Load Tests
+Using the Python Library Locust we can perform a load test on our single predict endpoint.
+![Screenshot of the pytest results](./images/locust_report.png "Screenshot of the pytest results")
+
 ## Enhancements
 Here lies a short list of possible future improvements to this project
 
@@ -158,6 +162,7 @@ Here lies a short list of possible future improvements to this project
 - Adding additional parameters to the predict endpoint
     - Type of Housing (Condo, House, Attached or Dettached housing etc.)
     - Postal Code or Address to help predict closer housing prices in an area
+- Flesh out load testing scenarios
 
 ## Demo 
 Here's a link to the demo on Youtube
